@@ -4,6 +4,8 @@
   "description": "A set of tools for React applications Edit",
   "main": "lib/index.js",
   "scripts": {
+    "build": "npm run lint && npm run build:clean && babel src -d lib",
+    "build:clean": "rm -rf lib && mkdir lib",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +15,11 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
     "eslint": "^4.4.1",
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.7.0"
