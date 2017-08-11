@@ -1,0 +1,14 @@
+{
+  "name": "react-aid",
+  "version": "0.0.0",
+  "description": "A set of tools for React applications Edit",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Or Barmatz",
+    "email": "barmatzor@gmail.com"
+  },
+  "license": "MIT"
+}
