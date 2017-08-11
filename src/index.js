@@ -1,1 +1,5 @@
-console.log('Hello World!');
+import redux from './redux';
+
+export default {
+  redux,
+};

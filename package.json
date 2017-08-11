@@ -1,7 +1,7 @@
 {
   "name": "react-aid",
   "version": "0.0.0",
-  "description": "A set of tools for React applications Edit",
+  "description": "A set of tools for React applications",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run lint && npm run build:clean && babel src -d lib",
@@ -9,9 +9,19 @@
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "pre-commit": [
+    "build"
+  ],
   "author": {
     "name": "Or Barmatz",
     "email": "barmatzor@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barmatz/react-aid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barmatz/react-aid/issues"
   },
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +32,10 @@
     "babel-register": "^6.24.1",
     "eslint": "^4.4.1",
     "eslint-config-airbnb-base": "^11.3.1",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "react-redux": "^5.0.6"
   }
 }
